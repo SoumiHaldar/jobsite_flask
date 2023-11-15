@@ -1,0 +1,28 @@
+<div class="fst-italic fw-bold mt-5 mb-3">Submit the Application form</div>
+<form action="/job/{{job['id']}}/apply" method="post">
+    <div class="mb-2">
+        <label>Full Name</label><br>
+        <input type="text" name="full_name" placeholder="Your Name"><br>
+    </div>
+    <div class="mb-2">
+        <label>Email</label><br>
+        <input type="text" name="email" placeholder="Your Email"><br>
+    </div>
+    <div class="mb-2">
+        <label>LinkedIN</label><br>
+        <input type="text" name="linkedin" placeholder="Your LinkedIn URL"><br>
+    </div>
+    <div>
+        <label>Education</label><br>
+        <textarea type="text" name="education" ></textarea><br>
+    </div>
+    <div>
+        <label>Work Experience</label><br>
+        <textarea type="text" name="work_exp" ></textarea><br>
+    </div>
+    <div class="mb-2">
+        <label>Resume URL</label><br>
+        <input type="text" name="resume_url" placeholder="Your Resume URL"><br>
+    </div>
+    <input class="btn btn-primary mt-3" type="submit">
+</form>
